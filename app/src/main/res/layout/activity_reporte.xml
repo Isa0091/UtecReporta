@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reporte"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.isa0091.utecreporta.Reporte">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_weight="0.18" />
+
+            <TextView
+                android:text="@string/reporta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reporte"
+                android:textColorHint="@android:color/black"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="15dp"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:layout_weight="0.18" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/edificioNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/nose"
+                    android:selectAllOnFocus="false"
+                    android:textAlignment="center"
+                    android:textColor="?android:attr/colorForegroundInverse"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    tools:text="Scannee QR del edificio" />
+
+                <ImageButton
+                    android:onClick="btnScanear"
+                    android:id="@+id/selectQR"
+                    android:src="@drawable/qredificio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_below="@+id/bienvenido_formulario"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColorHint="@color/colorletras"
+                android:layout_marginTop="36dp"
+                android:id="@+id/titulo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:hint="@string/Titulo"
+
+
+                android:singleLine="false"
+                android:background="@drawable/nose"
+                android:selectAllOnFocus="false"
+                android:textColor="?android:attr/colorForegroundInverse"
+                android:textColorLink="@color/colorletras"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/tomarfotos"
+                android:id="@+id/fototomada"
+                android:background="@color/colorletras"
+                android:padding="3dp"
+                android:maxWidth="283dp"
+                android:maxHeight="214dp"
+                android:onClick="GetFoto" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="30"
+                android:layout_below="@+id/bienvenido_formulario"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="36dp"
+                android:id="@+id/descripcion"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:hint="@string/descripcion"
+
+                android:textColorHint="@color/colorletras"
+                android:background="@drawable/nose"
+                android:textColor="?android:attr/colorForegroundInverse"
+                android:textColorLink="@color/colorletras"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorletras"
+                android:id="@+id/tipo"
+                android:popupBackground="@color/colorletras"
+                android:background="@drawable/dropdown" />
+
+
+
+
+            <!--<Button
+                android:text="Scanear QR Edificio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectQR"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorletras"
+                android:layout_marginTop="27dp"
+                android:layout_below="@+id/pass"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RtlHardcoded"
+                android:onClick="btnScanear"
+                android:textStyle="normal|bold" />-->
+
+
+
+            <Button
+                android:text="@string/reportar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reps"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorletras"
+                android:layout_marginTop="27dp"
+                android:layout_below="@+id/pass"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RtlHardcoded"
+                android:onClick="EnviarReporte"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="114dp"
+        android:layout_height="24dp"
+        android:id="@+id/button3"
+        android:onClick="cerrarsession"
+        android:background="@drawable/cerrar"
+        android:textColor="@color/colorPrimary"
+        tools:ignore="RtlHardcoded"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
