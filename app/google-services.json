@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "149168491168",
+    "firebase_url": "https://push-2547d.firebaseio.com",
+    "project_id": "push-2547d",
+    "storage_bucket": "push-2547d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149168491168:android:aa4474df3692edee",
+        "android_client_info": {
+          "package_name": "com.isa0091.utecreporta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149168491168-imv269re14gjiu9dfsp5eto2ifg564h6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlXl1rorHr7vkCiMIHtple5YMQ6faceVk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
